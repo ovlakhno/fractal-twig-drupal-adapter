@@ -216,6 +216,8 @@ class TwigAdapter extends Fractal.Adapter {
                 this.classes ? `class="${this.classes}"` : '',
                 this.attr ? this.attr.join(' ') : '',
             ];
+            this.classes = '';
+            this.attr = [];
 
             return attrList.join(' ');
         };
